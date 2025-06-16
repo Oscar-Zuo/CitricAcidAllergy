@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6e0b28325985d84d84aaf26ea4d2506, type: 3}
+  m_Name: IncreaseDamageLV1
+  m_EditorClassIdentifier: 
+  turretPluginPreset:
+    presetName: Level1 Meat
+    previewSprite: {fileID: -493641262060272312, guid: b3262649327db1342907c0467aacae5d, type: 3}
+    turretShootingPlusModifier: 0
+    turretShootingMultipleModifier: 0
+    damagePlusModifier: 0.5
+    damageMultipleModifier: 0
+    speedPlusModifier: 0
+    speedMultipleModifier: 0
+    penetrationPlusModifier: 0
+    level: 1
+    size: 1
+    value: 1
+    description: Slightly increase damge of bullets.

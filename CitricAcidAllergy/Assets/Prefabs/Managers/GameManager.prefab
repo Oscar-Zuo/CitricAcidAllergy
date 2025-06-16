@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7160877131396730311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2110464343275835696}
+  - component: {fileID: 1426605955112224197}
+  - component: {fileID: 2523918551803993192}
+  - component: {fileID: 7217418885114595765}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2110464343275835696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7160877131396730311}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1426605955112224197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7160877131396730311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df36b9854b36ea24faaeba752124abf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxRows: 10
+  _ship: {fileID: 0}
+  _gridSize: {x: 0.8, y: 0.8}
+  _mapYLimiation: {x: -7, y: 7}
+  _sellFromShipMultiple: 1.1
+  _enemySpawns:
+  - {fileID: 0}
+  _difficultyLevelCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 300
+      value: 300
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _notificationPanel: {fileID: 0}
+  _detailsPanel: {fileID: 0}
+  _reinforcementPanel: {fileID: 0}
+  _contributionText: {fileID: 0}
+  _pausedIndicator: {fileID: 0}
+  _gameLength: 300
+  _spawnHordeInterval: 10
+  _spawnEnemyInRowInterval: 1
+  _contributionLevelInterval: 50
+  _defaultEnemyPrefab: {fileID: 4547651587132341965, guid: 21709aec4fd65a141988a326a78edd9a, type: 3}
+  _defaultPlatformPrefab: {fileID: 8399573188077037843, guid: 06fea141048b6b64fab6cb587e4ebf31, type: 3}
+  _defaultProjectilePrefab: {fileID: 4558715497578369181, guid: 2e04522618f3d9e459a90419a16f0c1f, type: 3}
+  _defaultDeathEffectPrefab: {fileID: 7762798019456174893, guid: 226eaaba355745f4889ff289c74c65ae, type: 3}
+  _defaultTurretPrefab: {fileID: 2115571868786379254, guid: 909ed090f59890b4fb309b2476e6e9e9, type: 3}
+--- !u!114 &2523918551803993192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7160877131396730311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609147a5c596a6d46a7bbba775f69e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _previewGroupController: {fileID: 0}
+  _selectionBoxController: {fileID: 0}
+  _canvasRaycaster: {fileID: 0}
+--- !u!114 &7217418885114595765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7160877131396730311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 453dd0168c53cfd4db327d80661e0b70, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cbf678ff-38ad-4b12-8a83-917d67e906a7
+    m_ActionName: 'Default/MoveShip[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1426605955112224197}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnEditMode
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d70ceb20-7ad6-48f6-866e-d2449528979e
+    m_ActionName: 'Default/EditMode[/Keyboard/space,/Mouse/rightButton]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2523918551803993192}
+        m_TargetAssemblyTypeName: DraggingManager, Assembly-CSharp
+        m_MethodName: OnEditingShipMouseDown
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 526cc55f-33fc-4275-9fff-72dc208b5715
+    m_ActionName: 'Default/EditShip[/Mouse/press,/Mouse/delta]'
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Default
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}

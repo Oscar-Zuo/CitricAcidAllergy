@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed1893dc4502854385d36d175b81821, type: 3}
+  m_Name: LV1Turret
+  m_EditorClassIdentifier: 
+  _turretPreset:
+    presetName: Level1 Soldier
+    previewSprite: {fileID: 3861169209387647837, guid: 579925eb7d7d628ccbac060e990ff349, type: 3}
+    idleClip: {fileID: 7400000, guid: 33c82cd638519c61e9e4545730ce7c70, type: 2}
+    baseShooting: 1.5
+    maxniumHealth: 3
+    selfValue: 2
+    description: Brave solider
+    maxPluginSize: 3
+    pluginPresetNames: []
